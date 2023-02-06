@@ -1,0 +1,63 @@
+//
+// icon.scss
+// Theme component
+//
+
+.icon {
+  --#{$prefix}icon-size-base: #{$icon-size-base};
+  --#{$prefix}icon-size-xs: #{$icon-size-xs};
+  --#{$prefix}icon-size-sm: #{$icon-size-sm};
+  --#{$prefix}icon-size-lg: #{$icon-size-lg};
+  --#{$prefix}icon-size-xl: #{$icon-size-xl};
+}
+
+.icon > svg {
+  width: $icon-size-base;
+  height: $icon-size-base;
+}
+
+// Use "text-" utilities to fill svg icons
+.icon[class*="text-"] > svg [fill]:not([fill="none"]) {
+  fill: currentColor !important;
+}
+
+
+// Sizing
+
+.icon-xs > svg {
+  width: var(--#{$prefix}icon-size-xs);
+  height: var(--#{$prefix}icon-size-xs);
+}
+
+.icon-sm > svg {
+  width: var(--#{$prefix}icon-size-sm);
+  height: var(--#{$prefix}icon-size-sm);
+}
+
+.icon-lg > svg {
+  width: var(--#{$prefix}icon-size-lg);
+  height: var(--#{$prefix}icon-size-lg);
+}
+
+.icon-xl > svg {
+  width: var(--#{$prefix}icon-size-xl);
+  height: var(--#{$prefix}icon-size-xl);
+}
+
+
+// Circle
+
+.icon-circle {
+  --#{$prefix}icon-circle-size: #{$icon-circle-size};
+  --#{$prefix}icon-circle-font-size: #{$icon-circle-font-size};
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--#{$prefix}icon-circle-size);
+  height: var(--#{$prefix}icon-circle-size);
+  border-radius: 50%;
+
+  > .fe {
+    font-size: var(--#{$prefix}icon-circle-font-size);
+  }
+}
