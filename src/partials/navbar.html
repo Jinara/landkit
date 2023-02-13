@@ -3,7 +3,7 @@
 
     <!-- Brand -->
     <a class="navbar-brand" href="{{webRoot}}/index.html">
-      <img src="{{webRoot}}/assets/img/brand.svg" class="navbar-brand-img" alt="...">
+      <img src="{{webRoot}}/assets/img/brand-bd.svg" class="navbar-brand-img" alt="...">
     </a>
 
     <!-- Toggler -->
@@ -356,93 +356,16 @@
           </ul>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDocumentation" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
-            Documentation
+          <a class="nav-link" id="navbarHire"  href="{{webRoot}}/hire.html"  aria-haspopup="true" aria-expanded="false">
+            Be Hire
           </a>
-          <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarDocumentation">
-            <div class="list-group list-group-flush">
-              <a class="list-group-item" href="{{webRoot}}/docs/index.html">
 
-                <!-- Icon -->
-                <div class="icon icon-sm text-primary">
-                  {{> general/clipboard}}
-                </div>
-
-                <!-- Content -->
-                <div class="ms-4">
-
-                  <!-- Heading -->
-                  <h6 class="fw-bold text-uppercase text-primary mb-0">
-                    Documentation
-                  </h6>
-
-                  <!-- Text -->
-                  <p class="fs-sm text-gray-700 mb-0">
-                    Customizing and building
-                  </p>
-
-                </div>
-
-              </a>
-              <a class="list-group-item" href="{{webRoot}}/docs/alerts.html">
-
-                <!-- Icon -->
-                <div class="icon icon-sm text-primary">
-                  {{> layout/layout-4-blocks}}
-                </div>
-
-                <!-- Content -->
-                <div class="ms-4">
-
-                  <!-- Heading -->
-                  <h6 class="fw-bold text-uppercase text-primary mb-0">
-                    Components
-                  </h6>
-
-                  <!-- Text -->
-                  <p class="fs-sm text-gray-700 mb-0">
-                    Full list of components
-                  </p>
-
-                </div>
-
-              </a>
-              <a class="list-group-item" href="{{webRoot}}/docs/changelog.html">
-
-                <!-- Icon -->
-                <div class="icon icon-sm text-primary">
-                  {{> files/file}}
-                </div>
-
-                <!-- Content -->
-                <div class="ms-4">
-
-                  <!-- Heading -->
-                  <h6 class="fw-bold text-uppercase text-primary mb-0">
-                    Changelog
-                  </h6>
-
-                  <!-- Text -->
-                  <p class="fs-sm text-gray-700 mb-0">
-                    Keep track of changes
-                  </p>
-
-                </div>
-
-                <!-- Badge -->
-                <span class="badge rounded-pill bg-primary-soft ms-auto">
-                  {{themeVersion}}
-                </span>
-
-              </a>
-            </div>
-          </div>
         </li>
       </ul>
 
       <!-- Button -->
-      <a class="navbar-btn btn btn-sm btn-{{button}} lift ms-auto" href="https://themes.getbootstrap.com/product/landkit/" target="_blank">
-        Buy now
+      <a class="navbar-btn btn btn-sm btn-{{button}} lift ms-auto" data-bs-toggle="modal" data-bs-target="#modalBdev">
+        Early access
       </a>
 
     </div>

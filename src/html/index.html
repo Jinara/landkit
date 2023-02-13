@@ -8,6 +8,8 @@
     <!-- MODALS -->
     {{> partials/modals}}
 
+
+
     <!-- NAVBAR -->
     {{> partials/navbar classList="navbar-light bg-white" container="container" button="primary"}}
 
@@ -18,29 +20,30 @@
           <div class="col-12 col-md-5 col-lg-6 order-md-2">
 
             <!-- Image -->
-            <img src="assets/img/illustrations/illustration-2.png" class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0" alt="..." data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/illustrations/illustration-2-2.png" class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0" alt="..." data-aos="fade-up" data-aos-delay="100">
 
           </div>
           <div class="col-12 col-md-7 col-lg-6 order-md-1" data-aos="fade-up">
 
             <!-- Heading -->
             <h1 class="display-3 text-center text-md-start">
-              Welcome to <span class="text-primary">Landkit</span>. <br>
-              Develop anything.
+              Bienvenidos a <span class="text-primary">Baking<span class="text-success">Devs</span></span>. <br>
+          
             </h1>
 
             <!-- Text -->
             <p class="lead text-center text-md-start text-muted mb-6 mb-lg-8">
-              Build a beautiful, modern website with flexible Bootstrap components built from scratch.
+              Sé parte de la primera comunidad de aprendizaje gratuito destinada a personas que quieren escalar su conocimiento y habilidades IT para cumplir con sus propias metas
             </p>
 
             <!-- Buttons -->
             <div class="text-center text-md-start">
-              <a href="overview.html" class="btn btn-primary shadow lift me-1">
-                View all pages <i class="fe fe-arrow-right d-none d-md-inline ms-3"></i>
+              <a class="btn btn-primary shadow lift me-1" data-bigpicture='{"ytSrc": "9I-Y6VQ6tyI"}' href="#">
+                <i class="fe fe-eye me-2"></i> 
+                Ver el video
               </a>
-              <a href="docs/index.html" class="btn btn-primary-soft lift">
-                Documentation
+              <a class="btn btn-success lift" data-bs-toggle="modal" data-bs-target="#modalBdev">
+                Early access
               </a>
             </div>
 
@@ -56,111 +59,55 @@
           <div class="col-12 col-md-4" data-aos="fade-up">
 
             <!-- Icon -->
-            <div class="icon text-primary mb-3">
-              {{> general/settings-1}}
+            <div class="icon text-success mb-3">
+              {{> home/bulb-2}}
             </div>
 
             <!-- Heading -->
             <h3>
-              Built for developers
+              APRENDE
             </h3>
 
             <!-- Text -->
             <p class="text-muted mb-6 mb-md-0">
-              Landkit is built to make your life easier. Variables, build tooling, documentation, and reusable components.
+              Capacítate de forma gratuita y en base a tus objetivos.
             </p>
 
           </div>
           <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="50">
 
             <!-- Icon -->
-            <div class="icon text-primary mb-3">
-              {{> layout/layout-arrange}}
+            <div class="icon text-success mb-3">
+              {{> shopping/gift}}
             </div>
 
             <!-- Heading -->
             <h3>
-              Designed to be modern
+              ENSEÑA
             </h3>
 
             <!-- Text -->
             <p class="text-muted mb-6 mb-md-0">
-              Designed with the latest design trends in mind. Landkit feels modern, minimal, and beautiful.
+              Gana recompensas acompañando a otros BDevs.
             </p>
 
           </div>
           <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
 
             <!-- Icon -->
-            <div class="icon text-primary mb-3">
+            <div class="icon text-success mb-3">
               {{> code/code}}
             </div>
 
             <!-- Heading -->
             <h3>
-              Documentation for everything
+              ESCALA            
             </h3>
 
             <!-- Text -->
             <p class="text-muted mb-0">
-              We've written extensive documentation for components and tools, so you never have to reverse engineer anything.
+              Posiciónate en la plataforma y escala tu carrera.
             </p>
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
-    <!-- BRANDS -->
-    <section class="py-6 py-md-8 border-bottom">
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
-
-            <!-- Brand -->
-            <div class="img-fluid text-gray-600 mb-2 mb-md-0">
-              {{> logotype/airbnb}}
-            </div>
-
-          </div>
-          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
-
-            <!-- Brand -->
-            <div class="img-fluid text-gray-600 mb-2 mb-md-0">
-              {{> logotype/coinbase}}
-            </div>
-
-          </div>
-          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
-
-            <!-- Brand -->
-            <div class="img-fluid text-gray-600 mb-2 mb-md-0">
-              {{> logotype/dribbble}}
-            </div>
-
-          </div>
-          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
-
-            <!-- Brand -->
-            <div class="img-fluid text-gray-600 mb-2 mb-md-0">
-              {{> logotype/instagram}}
-            </div>
-
-          </div>
-          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
-
-            <!-- Brand -->
-            <div class="img-fluid text-gray-600 mb-2 mb-md-0">
-              {{> logotype/netflix}}
-            </div>
-
-          </div>
-          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
-
-            <!-- Brand -->
-            <div class="img-fluid text-gray-600 mb-2 mb-md-0">
-              {{> logotype/pinterest}}
-            </div>
 
           </div>
         </div> <!-- / .row -->
@@ -175,14 +122,20 @@
 
             <!-- Heading -->
             <h2>
-              The most useful resource <br>
-              <span class="text-success">ever created for <span data-typed='{"strings": ["developers.", "founders.", "designers."]}'></span></span>
+              ¡Obtén tue
+              <span class="text-success">  <span data-typed='{"strings": ["recompensa!"]}'></span></span>
             </h2>
 
             <!-- Text -->
             <p class="fs-lg text-muted mb-6">
-              Using Landkit to build your site means never worrying about designing another page or cross browser compatibility. Our ever-growing library of components and pre-designed layouts will make your life easier.
-            </p>
+              Decide cómo será tu carrera profesional, qué necesitas aprender y qué conocimientos puedes compartir con otros. Tú eliges y les das forma a tu futuro profesional.
+
+Más de 400 horas de contenido están a tu alcance de forma gratuita.
+
+Sí, entendiste bien, no tienes que pagar nada por tu aprendizaje. 
+Sé parte y obtén la recompensa.
+
+</p>
 
             <!-- List -->
             <div class="row">
@@ -198,7 +151,7 @@
 
                   <!-- Text -->
                   <p class="text-success">
-                    Lifetime updates
+                    FullStack
                   </p>
 
                 </div>
@@ -212,7 +165,7 @@
                   </div>
 
                   <p class="text-success mb-lg-0">
-                    Tons of assets
+                    Backend
                   </p>
 
                 </div>
@@ -230,7 +183,7 @@
 
                   <!-- Text -->
                   <p class="text-success">
-                    Tech support
+                    Frontend
                   </p>
 
                 </div>
@@ -245,7 +198,7 @@
 
                   <!-- Text -->
                   <p class="text-success mb-0">
-                    Integration ready
+                    DevOps
                   </p>
 
                 </div>
@@ -273,25 +226,6 @@
               <div class="card-body">
 
                 <!-- Form -->
-                <form>
-                  <div class="form-floating">
-                    <input type="text" class="form-control form-control-flush" id="cardName" placeholder="Name">
-                    <label for="cardName">Name</label>
-                  </div>
-                  <div class="form-floating">
-                    <input type="email" class="form-control form-control-flush" id="cardEmail" placeholder="Email">
-                    <label for="cardEmail">Email</label>
-                  </div>
-                  <div class="form-floating">
-                    <input type="password" class="form-control form-control-flush" id="cardPassword" placeholder="Password">
-                    <label for="cardPassword">Password</label>
-                  </div>
-                  <div class="mt-6">
-                    <button class="btn w-100 btn-success lift" type="submit">
-                      Download a sample
-                    </button>
-                  </div>
-                </form>
 
               </div>
 
@@ -299,43 +233,27 @@
 
           </div>
         </div> <!-- / .row -->
+      
+      
+      
+      
+      
+      
         <div class="row align-items-center">
           <div class="col-12 col-md-7 col-lg-6" data-aos="fade-right">
 
             <!-- Heading -->
             <h2>
-              We have lots of experience <br>
-              <span class="text-primary">building Bootstrap themes</span>.
+              Nuestra 
+              <span class="text-success">plataforma</span>
             </h2>
 
             <!-- Text -->
-            <p class="fs-lg text-muted mb-6">
+            <!-- <p class="fs-lg text-muted mb-6">
               We've built well over a dozen Bootstrap themes and sold tens of thousands of copies.
-            </p>
+            </p> -->
 
             <!-- List -->
-            <div class="d-flex">
-
-              <!-- Icon -->
-              <div class="icon text-primary">
-                {{> media/repeat}}
-              </div>
-
-              <div class="ms-5">
-
-                <!-- Heading -->
-                <h4 class="mb-1">
-                  Bootstrap users since the beginning
-                </h4>
-
-                <!-- Text -->
-                <p class="text-muted mb-6">
-                  We've been developing with Bootstrap since it was publicly released in 2011.
-                </p>
-
-              </div>
-
-            </div>
             <div class="d-flex">
 
               <!-- Icon -->
@@ -347,19 +265,58 @@
 
                 <!-- Heading -->
                 <h4 class="mb-1">
-                  Deep understanding of Bootstrap
+                  Aprende Programación desde cero o incorpora conocimientos avanzados 
                 </h4>
 
-                <!-- Text -->
+              </div>
+
+            </div>
+
+            <div class="d-flex">
+
+              <!-- Icon -->
+              <div class="icon text-primary">
+                {{> devices/gamepad-2}}
+              </div>
+
+              <div class="ms-5">
+
+                <!-- Heading -->
+                <h4 class="mb-1">
+                  Mientras desarrollas tu carrera, subes de nivel y ganas puntos
+
+                </h4>
+
+              </div>
+
+            </div>
+
+            <div class="d-flex">
+
+              <!-- Icon -->
+              <div class="icon text-primary">
+                {{> food/coffee-1}}
+              </div>
+
+              <div class="ms-5">
+
+                <!-- Heading -->
+                <h4 class="mb-1">
+                  Haz que tu tiempo de aprendizaje rinda con una plataforma de primer nivel
+                </h4>
+
+                <!-- Text 
                 <p class="text-muted mb-6 mb-md-0">
                   We've watched Bootstrap grow up over the years and understand it better than almost anyone.
-                </p>
+                </p> -->
 
               </div>
 
             </div>
 
           </div>
+
+          
           <div class="col-12 col-md-5 col-lg-6">
 
             <div class="w-md-150 w-lg-130 position-relative" data-aos="fade-left">
@@ -373,537 +330,11 @@
               <div class="img-skewed img-skewed-start">
 
                 <!-- Image -->
-                <img src="assets/img/screenshots/desktop/dashkit.jpg" class="screenshot img-fluid img-skewed-item" alt="...">
+                <img src="assets/img/screenshots/desktop/dashboard-bd.png" class="screenshot img-fluid img-skewed-item" alt="...">
 
               </div>
 
             </div>
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
-    <!-- TESTIMONIALS -->
-    <section class="pt-10 pt-md-12">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8 text-center">
-
-            <!-- Heading -->
-            <h2>
-              Our customers are our biggest fans.
-            </h2>
-
-            <!-- Text -->
-            <p class="fs-lg text-muted mb-7 mb-md-9">
-              We don't like to brag, but we don't mind letting our customers do it for us. Here are a few nice things folks have said about our themes over the years.
-            </p>
-
-          </div>
-        </div> <!-- / .row -->
-        <div class="row">
-          <div class="col-12">
-
-            <!-- Card -->
-            <div class="card card-row shadow-light-lg mb-6">
-              <div class="row gx-0">
-                <div class="col-12 col-md-6">
-
-                  <!-- Slider -->
-                  <div class="card-img-slider" data-flickity='{"fade": true, "imagesLoaded": true, "pageDots": false, "prevNextButtons": false, "asNavFor": "#blogSlider", "draggable": false}'>
-                    <a class="card-img-start position-absolute d-block w-100 bg-cover" style="background-image: url(assets/img/photos/photo-1.jpg);" href="#!">
-
-                      <!-- Image (placeholder) -->
-                      <img src="assets/img/photos/photo-1.jpg" alt="..." class="img-fluid d-md-none invisible">
-
-                    </a>
-                    <a class="card-img-start position-absolute d-block w-100 bg-cover" style="background-image: url(assets/img/photos/photo-26.jpg);" href="#!">
-
-                      <!-- Image (placeholder) -->
-                      <img src="assets/img/photos/photo-26.jpg" alt="..." class="img-fluid d-md-none invisible">
-
-                    </a>
-                  </div>
-
-                  <!-- Shape -->
-                  <div class="shape shape-end shape-fluid-y text-white d-none d-md-block">
-                    {{> curves/curve-4}}
-                  </div>
-
-                </div>
-                <div class="col-12 col-md-6 position-md-static">
-
-                  <!-- Slider -->
-                  <div class="position-md-static" data-flickity='{"wrapAround": true, "pageDots": false, "adaptiveHeight": true}' id="blogSlider">
-                    <div class="w-100">
-
-                      <!-- Body -->
-                      <div class="card-body">
-                        <blockquote class="blockquote text-center mb-0">
-
-                          <!-- Brand -->
-                          <div class="row justify-content-center mb-5 mb-md-7">
-                            <div class="col-6 col-sm-4 col-md-7 col-lg-5">
-
-                              <!-- Logo -->
-                              <div class="img-fluid" style="color: #FF5A5F;">
-                                {{> logotype/airbnb}}
-                              </div>
-
-                            </div>
-                          </div> <!-- / .row -->
-
-                          <!-- Text -->
-                          <p class="mb-5 mb-md-7">
-                            “Landkit is hands down the most useful front end Bootstrap theme I've ever used. I can't wait to use it again for my next project.”
-                          </p>
-
-                          <!-- Footer -->
-                          <footer class="blockquote-footer">
-                            <span class="h6 text-uppercase">Dave Gamache</span>
-                          </footer>
-
-                        </blockquote>
-                      </div>
-
-                    </div>
-                    <div class="w-100">
-
-                      <!-- Body -->
-                      <div class="card-body">
-                        <blockquote class="blockquote text-center mb-0">
-
-                          <!-- Brand -->
-                          <div class="row justify-content-center mb-5 mb-md-7">
-                            <div class="col-6 col-sm-4 col-md-7 col-lg-5">
-
-                              <!-- Logo -->
-                              <div class="img-fluid" style="color: #3F5D87;">
-                                {{> logotype/instagram}}
-                              </div>
-
-                            </div>
-                          </div> <!-- / .row -->
-
-                          <!-- Text -->
-                          <p class="mb-5 mb-md-7">
-                            “I've never used a theme as versatile and flexible as Landkit. It's my go to for building landing sites on almost any project.”
-                          </p>
-
-                          <!-- Footer -->
-                          <footer class="blockquote-footer">
-                            <span class="h6 text-uppercase">Russ D'Sa</span>
-                          </footer>
-
-                        </blockquote>
-                      </div>
-
-                    </div>
-                  </div>
-
-                </div>
-              </div> <!-- / .row -->
-            </div>
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
-    <!-- SHAPE -->
-    <div class="position-relative mt-n8">
-      <div class="shape shape-bottom shape-fluid-x text-gray-200">
-        {{> curves/curve-3}}
-      </div>
-    </div>
-
-    <!-- STATS -->
-    <section class="pt-12 pt-md-13 bg-gray-200">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-12 col-md-5 col-lg-6 order-md-2">
-
-            <!-- Image -->
-            <img src="assets/img/illustrations/illustration-8.png" alt="..." class="img-fluid mb-6 mb-md-0">
-
-          </div>
-          <div class="col-12 col-md-7 col-lg-6 order-md-1">
-
-            <!-- Heading -->
-            <h2>
-              Stay focused on your business. <br>
-              <span class="text-primary">Let us handle the design</span>.
-            </h2>
-
-            <!-- Text -->
-            <p class="fs-lg text-gray-700 mb-6">
-              You have a business to run. Stop worring about cross-browser bugs, designing new pages, keeping your components up to date. Let us do that for you.
-            </p>
-
-            <!-- Stats -->
-            <div class="d-flex">
-              <div class="pe-5">
-                <h3 class="mb-0">
-                  <span data-countup='{"startVal": 0}' data-to="100" data-aos data-aos-id="countup:in"></span>%
-                </h3>
-                <p class="text-gray-700 mb-0">
-                  Satisfaction
-                </p>
-              </div>
-              <div class="border-start border-gray-300"></div>
-              <div class="px-5">
-                <h3 class="mb-0">
-                  <span data-countup='{"startVal": 0}' data-to="24" data-aos data-aos-id="countup:in"></span>/
-                  <span data-countup='{"startVal": 0}' data-to="7" data-aos data-aos-id="countup:in"></span>
-                </h3>
-                <p class="text-gray-700 mb-0">
-                  Support
-                </p>
-              </div>
-              <div class="border-start border-gray-300"></div>
-              <div class="ps-5">
-                <h3 class="mb-0">
-                  <span data-countup='{"startVal": 0}' data-to="100" data-aos data-aos-id="countup:in"></span>k+
-                </h3>
-                <p class="text-gray-700 mb-0">
-                  Sales
-                </p>
-              </div>
-            </div>
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
-    <!-- PRICING -->
-    <section class="pt-9 pt-md-12 bg-gray-200">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8 text-center">
-
-            <!-- Heading -->
-            <h1>
-              Fair, simple pricing for all.
-            </h1>
-
-            <!-- Text -->
-            <p class="lead text-gray-700">
-              All types of businesses need access to development resources, so we give you the option to decide how much you need to use.
-            </p>
-
-            <!-- Form -->
-            <form class="d-flex align-items-center justify-content-center mb-7 mb-md-9">
-
-              <!-- Label -->
-              <span class="text-muted">
-                Annual
-              </span>
-
-              <!-- Switch -->
-              <div class="form-check form-switch mx-3">
-                <input class="form-check-input" type="checkbox" id="billingSwitch" data-toggle="price" data-target=".price">
-              </div>
-
-              <!-- Label -->
-              <span class="text-muted">
-                Monthly
-              </span>
-
-            </form>
-
-          </div>
-        </div> <!-- / .row -->
-        <div class="row align-items-center gx-0">
-          <div class="col-12 col-md-6">
-
-            <!-- Card -->
-            <div class="card rounded-lg shadow-lg mb-6 mb-md-0" style="z-index: 1;" data-aos="fade-up">
-
-              <!-- Body -->
-              <div class="card-body py-6 py-md-8">
-                <div class="row justify-content-center">
-                  <div class="col-12 col-xl-9">
-
-                    <!-- Badge -->
-                    <div class="text-center mb-5">
-                      <span class="badge rounded-pill bg-primary-soft">
-                        <span class="h6 fw-bold text-uppercase">Standard</span>
-                      </span>
-                    </div>
-
-                    <!-- Price -->
-                    <div class="d-flex justify-content-center">
-                      <span class="h2 mb-0 mt-2">$</span>
-                      <span class="price display-2 mb-0" data-annual="29" data-monthly="49">29</span>
-                      <span class="h2 align-self-end mb-1">/mo</span>
-                    </div>
-
-                    <!-- Text -->
-                    <p class="text-center text-muted mb-6 mb-md-8">
-                      per seat
-                    </p>
-
-                    <!-- Features -->
-                    <div class="d-flex">
-
-                      <!-- Check -->
-                      <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                        <i class="fe fe-check"></i>
-                      </div>
-
-                      <!-- Text -->
-                      <p>
-                        Rich, responsive landing pages
-                      </p>
-
-                    </div>
-                    <div class="d-flex">
-
-                      <!-- Check -->
-                      <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                        <i class="fe fe-check"></i>
-                      </div>
-
-                      <!-- Text -->
-                      <p>
-                        100+ styled components
-                      </p>
-
-                    </div>
-                    <div class="d-flex">
-
-                      <!-- Check -->
-                      <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                        <i class="fe fe-check"></i>
-                      </div>
-
-                      <!-- Text -->
-                      <p>
-                        Flexible, simple license
-                      </p>
-
-                    </div>
-                    <div class="d-flex">
-
-                      <!-- Check -->
-                      <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                        <i class="fe fe-check"></i>
-                      </div>
-
-                      <!-- Text -->
-                      <p>
-                        Speedy build tooling
-                      </p>
-
-                    </div>
-                    <div class="d-flex">
-
-                      <!-- Check -->
-                      <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                        <i class="fe fe-check"></i>
-                      </div>
-
-                      <!-- Text -->
-                      <p class="mb-0">
-                        6 months free support included
-                      </p>
-
-                    </div>
-
-                  </div>
-                </div> <!-- / .row -->
-              </div>
-
-              <!-- Button -->
-              <a href="#!" class="card-btn btn w-100 btn-lg btn-primary">
-                Get it now
-              </a>
-
-            </div>
-
-          </div>
-          <div class="col-12 col-md-6 ms-md-n3">
-
-            <!-- Card -->
-            <div class="card rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
-
-              <!-- Body -->
-              <div class="card-body py-6 py-md-8">
-                <div class="row justify-content-center">
-                  <div class="col-12 col-xl-10">
-
-                    <!-- Badge -->
-                    <p class="text-center mb-8 mb-md-11">
-                      <span class="badge rounded-pill bg-primary-soft">
-                        <span class="h6 fw-bold text-uppercase">Enterprise</span>
-                      </span>
-                    </p>
-
-                    <!-- Text -->
-                    <p class="lead text-center text-muted mb-0 mb-md-10">
-                      We offer variable pricing with discounts for larger organizations. Get in touch with us and we’ll figure out something that works for everyone.
-                    </p>
-
-                  </div>
-                </div> <!-- / .row -->
-              </div>
-
-              <!-- Button -->
-              <a href="#!" class="card-btn btn w-100 btn-lg btn-light bg-gray-300 text-gray-700">
-                Contact us
-              </a>
-
-            </div>
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
-    <!-- SHAPE -->
-    <div class="position-relative mt-n15">
-      <div class="shape shape-bottom shape-fluid-x text-dark">
-        {{> curves/curve-1}}
-      </div>
-    </div>
-
-    <!-- FAQ -->
-    <section class="pt-15 bg-dark">
-      <div class="container pt-8 pt-md-11">
-        <div class="row">
-          <div class="col-12 col-md-6">
-
-            <!-- Item -->
-            <div class="d-flex">
-
-              <!-- Badge -->
-              <div class="badge badge-lg badge-rounded-circle bg-success">
-                <span>?</span>
-              </div>
-
-              <div class="ms-5">
-
-                <!-- Heading -->
-                <h4 class="text-white">
-                  Can I use Landkit for my clients?
-                </h4>
-
-                <!-- Text -->
-                <p class="text-muted mb-6 mb-md-8">
-                  Absolutely. The Bootstrap Themes license allows you to build a website for personal use or for a client.
-                </p>
-
-              </div>
-
-            </div>
-
-            <!-- Item -->
-            <div class="d-flex">
-
-              <!-- Badge -->
-              <div class="badge badge-lg badge-rounded-circle bg-success">
-                <span>?</span>
-              </div>
-
-              <div class="ms-5">
-
-                <!-- Heading -->
-                <h4 class="text-white">
-                  Do I get free updates?
-                </h4>
-
-                <!-- Text -->
-                <p class="text-muted mb-6 mb-md-0">
-                  Yes. We update all of our themes with each Bootstrap update, plus are constantly adding new components, pages, and features to our themes.
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
-          <div class="col-12 col-md-6">
-
-            <!-- Item -->
-            <div class="d-flex">
-
-              <!-- Badge -->
-              <div class="badge badge-lg badge-rounded-circle bg-success">
-                <span>?</span>
-              </div>
-
-              <div class="ms-5">
-
-                <!-- Heading -->
-                <h4 class="text-white">
-                  Is there a money back guarantee?
-                </h4>
-
-                <!-- Text -->
-                <p class="text-muted mb-6 mb-md-8">
-                  Yup! Bootstrap Themes come with a satisfaction guarantee. Submit a return and get your money back.
-                </p>
-
-              </div>
-
-            </div>
-
-            <!-- Item -->
-            <div class="d-flex">
-
-              <!-- Badge -->
-              <div class="badge badge-lg badge-rounded-circle bg-success">
-                <span>?</span>
-              </div>
-
-              <div class="ms-5">
-
-                <!-- Heading -->
-                <h4 class="text-white">
-                  Does it work with Rails? React? Laravel?
-                </h4>
-
-                <!-- Text -->
-                <p class="text-muted mb-6 mb-md-0">
-                  Yes. Landkit has basic CSS/JS files you can include. If you want to enable deeper customization, you can integrate it into your assets pipeline or build processes.
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
-    <!-- CTA -->
-    <section class="py-8 py-md-11 bg-dark">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8 text-center">
-
-            <!-- Badge -->
-            <span class="badge rounded-pill bg-gray-700-soft mb-4">
-              <span class="h6 fw-bold text-uppercase">Get started</span>
-            </span>
-
-            <!-- Heading -->
-            <h1 class="display-4 text-white">
-              Get Landkit and save your time.
-            </h1>
-
-            <!-- Text -->
-            <p class="fs-lg text-muted mb-6 mb-md-8">
-              Stop wasting time trying to do it the "right way" and build a site from scratch. Landkit is faster, easier, and you still have complete control.
-            </p>
-
-            <!-- Button -->
-            <a href="https://themes.getbootstrap.com/product/landkit/" target="_blank" class="btn btn-success lift">
-              Buy it now <i class="fe fe-arrow-right"></i>
-            </a>
 
           </div>
         </div> <!-- / .row -->

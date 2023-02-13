@@ -22,6 +22,102 @@
   <body class="bg-light">
 
     <!-- MODALS -->
+    <!-- BDev -->
+    <div class="modal fade" id="modalBdev" tabindex="-1" role="dialog" aria-labelledby="modalBdevTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+    
+            <!-- Close -->
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+            <!-- Image -->
+            <div class="text-center">
+              <img src="./assets/img/illustrations/illustration-1.png" alt="..." class="img-fluid mb-3" style="width: 200px;">
+            </div>
+    
+            <!-- Heading -->
+            <h2 class="fw-bold text-center mb-1" id="modalBdevTitle">
+    					Early Access
+            </h2>
+    
+            <!-- Text -->
+            <p id="EarlyAccessBdevText" class="fs-lg text-center text-muted mb-6 mb-md-8">
+              Estás a un clic de convertirte en un BDev. Apúntante a la lista de suscripción. Pronto abriremos las puertas de la plataforma que usarás para escalar tus conocimientos y habilidades.         </p>
+    
+            <!-- Form -->
+            <form id="BdevForm" >
+              <div class="row">
+                <div class="col-12 col-md-6">
+    
+                  <!-- First name -->
+                  <div class="form-floating">
+                    <input type="text" class="form-control form-control-flush" id="BdevFirstNameModal" placeholder="First name">
+                    <label for="BdevFirstNameModal">Nombre</label>
+                  </div>
+    
+                </div>
+                <div class="col-12 col-md-6">
+    
+                  <!-- Last name -->
+                  <div class="form-floating">
+                    <input type="text" class="form-control form-control-flush" id="BdevLastNameModal" placeholder="Last name">
+                    <label for="BdevLastNameModal">Apellido</label>
+                  </div>
+    
+                </div>
+              </div>
+    
+    
+              <div class="row">
+                <div class="col-12">
+    
+                  <!-- Email -->
+                  <div class="form-floating">
+                    <input type="email" class="form-control form-control-flush" id="BdevEmailModal" placeholder="Email">
+                    <label for="registrationEmailModalBdev">Email</label>
+                  </div>
+    
+                </div>
+    
+              </div>
+              
+              <div class="row">
+                <div class="col-12">
+    
+                  <!-- Submit -->
+                  <button id="BdevButtonSub" class="btn w-100 btn-success mt-3 lift">
+                    Tene tu Early access
+                  </button>
+    
+                </div>
+              </div>
+            </form>
+    
+    
+            <!-- success -->
+          <div id="BdevSuccess" style="display: none;" >
+              <p class="fs-lg text-center text-muted mb-6 mb-md-8">
+                ¡Ya eres parte de la comunidad IT de Baking Dev! Pronto te contaremos todo para que empieces a cumplir tus objetivos. Quédate atento a tu casilla de Spam por si agarramos el camino equivocado cuando queramos ponernos en contacto contigo 😉.
+              </p>
+    
+              <div class="row">
+                <div class="col-12">
+              <button class="btn w-100 btn-success mt-3 lift" data-bs-dismiss="modal" aria-label="Close">
+                Cerrar
+              </button>
+              </div>
+              </div>
+          </div>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
     <!-- Example -->
     <div class="modal fade" id="modalExample" tabindex="-1" role="dialog" aria-labelledby="modalExampleTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
@@ -445,7 +541,7 @@
     
         <!-- Brand -->
         <a class="navbar-brand" href="./index.html">
-          <img src="./assets/img/brand.svg" class="navbar-brand-img" alt="...">
+          <img src="./assets/img/brand-bd.svg" class="navbar-brand-img" alt="...">
         </a>
     
         <!-- Toggler -->
@@ -798,90 +894,16 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarDocumentation" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
-                Documentation
+              <a class="nav-link" id="navbarHire"  href="./hire.html"  aria-haspopup="true" aria-expanded="false">
+                Be Hire
               </a>
-              <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarDocumentation">
-                <div class="list-group list-group-flush">
-                  <a class="list-group-item" href="./docs/index.html">
     
-                    <!-- Icon -->
-                    <div class="icon icon-sm text-primary">
-                      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M8 3v.5A1.5 1.5 0 009.5 5h5A1.5 1.5 0 0016 3.5V3h2a2 2 0 012 2v16a2 2 0 01-2 2H6a2 2 0 01-2-2V5a2 2 0 012-2h2z" fill="#335EEA" opacity=".3"/><path d="M11 2a1 1 0 012 0h1.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11z" fill="#335EEA"/><rect fill="#335EEA" opacity=".3" x="7" y="10" width="5" height="2" rx="1"/><rect fill="#335EEA" opacity=".3" x="7" y="14" width="9" height="2" rx="1"/></g></svg>                </div>
-    
-                    <!-- Content -->
-                    <div class="ms-4">
-    
-                      <!-- Heading -->
-                      <h6 class="fw-bold text-uppercase text-primary mb-0">
-                        Documentation
-                      </h6>
-    
-                      <!-- Text -->
-                      <p class="fs-sm text-gray-700 mb-0">
-                        Customizing and building
-                      </p>
-    
-                    </div>
-    
-                  </a>
-                  <a class="list-group-item" href="./docs/alerts.html">
-    
-                    <!-- Icon -->
-                    <div class="icon icon-sm text-primary">
-                      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><rect fill="#335EEA" x="4" y="4" width="7" height="7" rx="1.5"/><path d="M5.5 13h4a1.5 1.5 0 011.5 1.5v4A1.5 1.5 0 019.5 20h-4A1.5 1.5 0 014 18.5v-4A1.5 1.5 0 015.5 13zm9-9h4A1.5 1.5 0 0120 5.5v4a1.5 1.5 0 01-1.5 1.5h-4A1.5 1.5 0 0113 9.5v-4A1.5 1.5 0 0114.5 4zm0 9h4a1.5 1.5 0 011.5 1.5v4a1.5 1.5 0 01-1.5 1.5h-4a1.5 1.5 0 01-1.5-1.5v-4a1.5 1.5 0 011.5-1.5z" fill="#335EEA" opacity=".3"/></g></svg>                </div>
-    
-                    <!-- Content -->
-                    <div class="ms-4">
-    
-                      <!-- Heading -->
-                      <h6 class="fw-bold text-uppercase text-primary mb-0">
-                        Components
-                      </h6>
-    
-                      <!-- Text -->
-                      <p class="fs-sm text-gray-700 mb-0">
-                        Full list of components
-                      </p>
-    
-                    </div>
-    
-                  </a>
-                  <a class="list-group-item" href="./docs/changelog.html">
-    
-                    <!-- Icon -->
-                    <div class="icon icon-sm text-primary">
-                      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M5.857 2h7.88a1.5 1.5 0 01.968.355l4.764 4.029A1.5 1.5 0 0120 7.529v12.554c0 1.79-.02 1.917-1.857 1.917H5.857C4.02 22 4 21.874 4 20.083V3.917C4 2.127 4.02 2 5.857 2z" fill="#335EEA" opacity=".3"/><rect fill="#335EEA" x="6" y="11" width="9" height="2" rx="1"/><rect fill="#335EEA" x="6" y="15" width="5" height="2" rx="1"/></g></svg>                </div>
-    
-                    <!-- Content -->
-                    <div class="ms-4">
-    
-                      <!-- Heading -->
-                      <h6 class="fw-bold text-uppercase text-primary mb-0">
-                        Changelog
-                      </h6>
-    
-                      <!-- Text -->
-                      <p class="fs-sm text-gray-700 mb-0">
-                        Keep track of changes
-                      </p>
-    
-                    </div>
-    
-                    <!-- Badge -->
-                    <span class="badge rounded-pill bg-primary-soft ms-auto">
-                      2.2.0
-                    </span>
-    
-                  </a>
-                </div>
-              </div>
             </li>
           </ul>
     
           <!-- Button -->
-          <a class="navbar-btn btn btn-sm btn-primary lift ms-auto" href="https://themes.getbootstrap.com/product/landkit/" target="_blank">
-            Buy now
+          <a class="navbar-btn btn btn-sm btn-primary lift ms-auto" data-bs-toggle="modal" data-bs-target="#modalBdev">
+            Early access
           </a>
     
         </div>
@@ -1180,7 +1202,7 @@
           <div class="col-12 col-md-4 col-lg-3">
     
             <!-- Brand -->
-            <img src="./assets/img/brand.svg" alt="..." class="footer-brand img-fluid mb-2">
+            <img src="./assets/img/brand-bd.svg" alt="..." class="footer-brand img-fluid mb-2">
     
             <!-- Text -->
             <p class="text-gray-700 mb-2">
@@ -1207,43 +1229,6 @@
               <li class="list-inline-item list-social-item">
                 <a href="#!" class="text-decoration-none">
                   <img src="./assets/img/icons/social/pinterest.svg" class="list-social-icon" alt="...">
-                </a>
-              </li>
-            </ul>
-    
-          </div>
-          <div class="col-6 col-md-4 col-lg-2">
-    
-            <!-- Heading -->
-            <h6 class="fw-bold text-uppercase text-gray-700">
-              Products
-            </h6>
-    
-            <!-- List -->
-            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
-              <li class="mb-3">
-                <a href="#!" class="text-reset">
-                  Page Builder
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="#!" class="text-reset">
-                  UI Kit
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="#!" class="text-reset">
-                  Styleguide
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="#!" class="text-reset">
-                  Documentation
-                </a>
-              </li>
-              <li>
-                <a href="#!" class="text-reset">
-                  Changelog
                 </a>
               </li>
             </ul>

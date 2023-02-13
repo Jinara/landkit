@@ -14,6 +14,7 @@
     "choices.js": "^10.2.0",
     "countup.js": "^2.3.2",
     "dropzone": "^5.9.3",
+    "firebase": "^9.17.1",
     "flickity": "^3.0.0",
     "flickity-as-nav-for": "^3.0.0",
     "flickity-fade": "^2.0.0",
