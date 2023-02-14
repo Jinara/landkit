@@ -59,7 +59,7 @@ function pushDataBdev(){
   });
 }
 
-function changeElements() {
+function changeElementsBdev() {
 
   var bdevForm = document.getElementById("BdevForm");
   var earlyAccessBdevText = document.getElementById("EarlyAccessBdevText");
@@ -71,12 +71,46 @@ function changeElements() {
 }
 
 
+function pushDataBhire(){
+
+	var firstName = document.getElementById("BhireFirstNameModal").value;
+	var lastName = document.getElementById("BhireLastNameModal").value;
+	var email = document.getElementById("BhireEmailModal").value;
+  var randomId = makeid(25);
+
+  set(ref(database, 'bhire/' + randomId), {
+    first_name: firstName,
+    email: email,
+    last_name : lastName
+  });
+}
+
+function changeElementsBhire() {
+
+  var bhireForm = document.getElementById("BhireForm");
+  var earlyAccessBhireText = document.getElementById("EarlyAccessBhireText");
+  var bhireSucsess = document.getElementById("BhireSuccess");
+  
+  bhireForm.style.display = 'none';
+  earlyAccessBhireText.style.display = 'none';
+  bhireSucsess.style.display = 'block';
+}
+
+
 //Le damos la funcionalidad al form
 var element = document.getElementById("BdevForm");
 
 element.addEventListener("submit", function(evt) {
   evt.preventDefault();
   pushDataBdev();
-  changeElements();
+  changeElementsBdev();
 }, true);
 
+//Le damos la funcionalidad al form
+var element = document.getElementById("BhireForm");
+
+element.addEventListener("submit", function(evt) {
+  evt.preventDefault();
+  pushDataBhire();
+  changeElementsBhire();
+}, true);

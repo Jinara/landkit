@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
     
     <!-- Title -->
-    <title>Landkit</title>
+    <title>BakingDevs</title>
   </head>
   <body>
 
@@ -98,8 +98,104 @@
             <!-- success -->
           <div id="BdevSuccess" style="display: none;" >
               <p class="fs-lg text-center text-muted mb-6 mb-md-8">
-                ¡Ya eres parte de la comunidad IT de Baking Dev! Pronto te contaremos todo para que empieces a cumplir tus objetivos. Quédate atento a tu casilla de Spam por si agarramos el camino equivocado cuando queramos ponernos en contacto contigo 😉.
+                ¡Ya eres parte de la comunidad IT de BakingDevs! Pronto te contaremos todo para que empieces a cumplir tus objetivos. Quédate atento a tu casilla de Spam por si agarramos el camino equivocado cuando queramos ponernos en contacto contigo 😉.
               </p>
+    
+              <div class="row">
+                <div class="col-12">
+              <button class="btn w-100 btn-success mt-3 lift" data-bs-dismiss="modal" aria-label="Close">
+                Cerrar
+              </button>
+              </div>
+              </div>
+          </div>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+    <!-- BHire -->
+    <div class="modal fade" id="modalBhire" tabindex="-1" role="dialog" aria-labelledby="modalBhireTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+    
+            <!-- Close -->
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+            <!-- Image -->
+            <div class="text-center">
+              <img src="./assets/img/illustrations/illustration-1.png" alt="..." class="img-fluid mb-3" style="width: 200px;">
+            </div>
+    
+            <!-- Heading -->
+            <h2 class="fw-bold text-center mb-1" id="modalBhireTitle">
+    					Early Access
+            </h2>
+    
+            <!-- Text -->
+            <p id="EarlyAccessBhireText" class="fs-lg text-center text-muted mb-6 mb-md-8">
+    					Compárteme tus datos y te daremos un lugar en el early access de la plataforma. ¡Hazlo pronto! Tenemos cupos limitados          <!-- Form -->
+            <form id="BhireForm" >
+              <div class="row">
+                <div class="col-12 col-md-6">
+    
+                  <!-- First name -->
+                  <div class="form-floating">
+                    <input type="text" class="form-control form-control-flush" id="BhireFirstNameModal" placeholder="First name">
+                    <label for="BhireFirstNameModal">Nombre</label>
+                  </div>
+    
+                </div>
+                <div class="col-12 col-md-6">
+    
+                  <!-- Last name -->
+                  <div class="form-floating">
+                    <input type="text" class="form-control form-control-flush" id="BhireLastNameModal" placeholder="Last name">
+                    <label for="BhireLastNameModal">Apellido</label>
+                  </div>
+    
+                </div>
+              </div>
+    
+    
+              <div class="row">
+                <div class="col-12">
+    
+                  <!-- Email -->
+                  <div class="form-floating">
+                    <input type="email" class="form-control form-control-flush" id="BhireEmailModal" placeholder="Email">
+                    <label for="registrationEmailModalBhire">Email</label>
+                  </div>
+    
+                </div>
+    
+              </div>
+              
+              <div class="row">
+                <div class="col-12">
+    
+                  <!-- Submit -->
+                  <button id="BhireButtonSub" class="btn w-100 btn-success mt-3 lift">
+                    Tene tu Early access
+                  </button>
+    
+                </div>
+              </div>
+            </form>
+    
+    
+            <!-- success -->
+          <div id="BhireSuccess" style="display: none;" >
+              <p class="fs-lg text-center text-muted mb-6 mb-md-8">
+    
+    						Ya estas en nuestra lista de espera, apenas abramos acceso te estaremos contactando. 
+    
+    					</p>
     
               <div class="row">
                 <div class="col-12">
@@ -559,352 +655,32 @@
             <i class="fe fe-x"></i>
           </button>
     
-          <!-- Navigation -->
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarLandings" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
-                Landings
+           <!-- Navigation -->
+    			 <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" id="navbarLandings" data-scroll href="#why"  aria-haspopup="true" aria-expanded="false">
+                ¿Por que?
               </a>
-              <div class="dropdown-menu dropdown-menu-xl p-0" aria-labelledby="navbarLandings">
-                <div class="row gx-0">
-                  <div class="col-12 col-lg-6">
-                    <div class="dropdown-img-start" style="background-image: url(./assets/img/photos/photo-3.jpg);">
-    
-                      <!-- Heading -->
-                      <h4 class="fw-bold text-white mb-0">
-                        Want to see an overview?
-                      </h4>
-    
-                      <!-- Text -->
-                      <p class="fs-sm text-white">
-                        See all the pages at once.
-                      </p>
-    
-                      <!-- Button -->
-                      <a href="./overview.html" class="btn btn-sm btn-white shadow-dark fonFt-size-sm">
-                        View all pages
-                      </a>
-    
-                    </div>
-                  </div>
-                  <div class="col-12 col-lg-6">
-                    <div class="dropdown-body">
-                      <div class="row gx-0">
-                        <div class="col-6">
-    
-                          <!-- Heading -->
-                          <h6 class="dropdown-header">
-                            Services
-                          </h6>
-    
-                          <!-- List -->
-                          <a class="dropdown-item" href="./coworking.html">
-                            Coworking
-                          </a>
-                          <a class="dropdown-item" href="./rental.html">
-                            Rental
-                          </a>
-                          <a class="dropdown-item mb-5" href="./job.html">
-                            Job Listing
-                          </a>
-    
-                          <!-- Heading -->
-                          <h6 class="dropdown-header">
-                            Apps
-                          </h6>
-    
-                          <!-- List -->
-                          <a class="dropdown-item" href="./desktop-app.html">
-                            Desktop
-                          </a>
-                          <a class="dropdown-item" href="./mobile-app.html">
-                            Mobile
-                          </a>
-    
-                        </div>
-                        <div class="col-6">
-    
-                          <!-- Heading -->
-                          <h6 class="dropdown-header">
-                            Web
-                          </h6>
-    
-                          <!-- List -->
-                          <a class="dropdown-item" href="./index.html">
-                            Basic
-                          </a>
-                          <a class="dropdown-item" href="./startup.html">
-                            Startup
-                          </a>
-                          <a class="dropdown-item" href="./enterprise.html">
-                            Enterprise
-                          </a>
-                          <a class="dropdown-item" href="./service.html">
-                            Service
-                          </a>
-                          <a class="dropdown-item" href="./cloud.html">
-                            Cloud Hosting
-                          </a>
-                          <a class="dropdown-item" href="./agency.html">
-                            Agency
-                          </a>
-                          <a class="dropdown-item" href="./framework.html">
-                            Framework
-                          </a>
-    
-                        </div>
-                      </div> <!-- / .row -->
-                    </div>
-                  </div>
-                </div> <!-- / .row -->
-              </div>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarPages" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
-                Pages
+              <a class="nav-link dropdown-toggle" id="navbarPages"  data-scroll href="#demo" aria-haspopup="true" aria-expanded="false">
+                Contacto
               </a>
-              <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarPages">
-                <div class="row gx-0">
-                  <div class="col-6">
-                    <div class="row gx-0">
-                      <div class="col-12 col-lg-6">
-    
-                        <!-- Heading -->
-                        <h6 class="dropdown-header">
-                          Career
-                        </h6>
-    
-                        <!-- List -->
-                        <a class="dropdown-item" href="./careers.html">
-                          Listing
-                        </a>
-                        <a class="dropdown-item mb-5" href="./career-single.html">
-                          Opening
-                        </a>
-    
-                        <!-- Heading -->
-                        <h6 class="dropdown-header">
-                          Company
-                        </h6>
-    
-                        <!-- List -->
-                        <a class="dropdown-item" href="./about.html">
-                          About
-                        </a>
-                        <a class="dropdown-item" href="./pricing.html">
-                          Pricing
-                        </a>
-                        <a class="dropdown-item mb-5 mb-lg-0" href="./terms-of-service.html">
-                          Terms
-                        </a>
-    
-                      </div>
-                      <div class="col-12 col-lg-6">
-    
-                        <!-- Heading -->
-                        <h6 class="dropdown-header">
-                          Help center
-                        </h6>
-    
-                        <!-- List -->
-                        <a class="dropdown-item" href="./help-center.html">
-                          Overview
-                        </a>
-                        <a class="dropdown-item mb-5" href="./help-center-article.html">
-                          Article
-                        </a>
-    
-                        <!-- Heading -->
-                        <h6 class="dropdown-header">
-                          Contact
-                        </h6>
-    
-                        <!-- List -->
-                        <a class="dropdown-item" href="./contact.html">
-                          Basic
-                        </a>
-                        <a class="dropdown-item" href="./contact-alt.html">
-                          Cover
-                        </a>
-    
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="row gx-0">
-                      <div class="col-12 col-lg-6">
-    
-                        <!-- Heading -->
-                        <h6 class="dropdown-header">
-                          Blog
-                        </h6>
-    
-                        <!-- List -->
-                        <a class="dropdown-item" href="./blog.html">
-                          Rich View
-                        </a>
-                        <a class="dropdown-item" href="./blog-post.html">
-                          Article
-                        </a>
-                        <a class="dropdown-item" href="./blog-showcase.html">
-                          Showcase
-                        </a>
-                        <a class="dropdown-item mb-5 mb-lg-0" href="./blog-search.html">
-                          Search
-                        </a>
-    
-                      </div>
-                      <div class="col-12 col-lg-6">
-    
-                        <!-- Heading -->
-                        <h6 class="dropdown-header">
-                          Portfolio
-                        </h6>
-    
-                        <!-- List -->
-                        <a class="dropdown-item" href="./portfolio-masonry.html">
-                          Masonry
-                        </a>
-                        <a class="dropdown-item" href="./portfolio-grid-rows.html">
-                          Grid Rows
-                        </a>
-                        <a class="dropdown-item" href="./portfolio-parallax.html">
-                          Parallax
-                        </a>
-                        <a class="dropdown-item" href="./portfolio-case-study.html">
-                          Case Study
-                        </a>
-                        <a class="dropdown-item" href="./portfolio-sidebar.html">
-                          Sidebar
-                        </a>
-                        <a class="dropdown-item" href="./portfolio-sidebar-fluid.html">
-                          Sidebar: Fluid
-                        </a>
-                        <a class="dropdown-item" href="./portfolio-grid.html">
-                          Basic Grid
-                        </a>
-    
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div> <!-- / .row -->
+              <!-- / .row -->
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarAccount" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
-                Account
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarAccount">
-                <li class="dropdown-item dropend">
-                  <a class="dropdown-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
-                    Settings
-                  </a>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="./account-general.html">
-                      General
-                    </a>
-                    <a class="dropdown-item" href="./account-security.html">
-                      Security
-                    </a>
-                    <a class="dropdown-item" href="./account-notifications.html">
-                      Notifications
-                    </a>
-                    <a class="dropdown-item" href="./billing-plans-and-payment.html">
-                      Plans & Payment
-                    </a>
-                    <a class="dropdown-item" href="./billing-users.html">
-                      Users
-                    </a>
-                  </div>
-                </li>
-                <li class="dropdown-item dropend">
-                  <a class="dropdown-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
-                    Sign In
-                  </a>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="./signin-cover.html">
-                      Side Cover
-                    </a>
-                    <a class="dropdown-item" href="./signin-illustration.html">
-                      Illustration
-                    </a>
-                    <a class="dropdown-item" href="./signin.html">
-                      Basic
-                    </a>
-                    <a class="dropdown-item" data-bs-toggle="modal" href="#modalSigninHorizontal">
-                      Modal Horizontal
-                    </a>
-                    <a class="dropdown-item" data-bs-toggle="modal" href="#modalSigninVertical">
-                      Modal Vertical
-                    </a>
-                  </div>
-                </li>
-                <li class="dropdown-item dropend">
-                  <a class="dropdown-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
-                    Sign Up
-                  </a>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="./signup-cover.html">
-                      Side Cover
-                    </a>
-                    <a class="dropdown-item" href="./signup-illustration.html">
-                      Illustration
-                    </a>
-                    <a class="dropdown-item" href="./signup.html">
-                      Basic
-                    </a>
-                    <a class="dropdown-item" data-bs-toggle="modal" href="#modalSignupHorizontal">
-                      Modal Horizontal
-                    </a>
-                    <a class="dropdown-item" data-bs-toggle="modal" href="#modalSignupVertical">
-                      Modal Vertical
-                    </a>
-                  </div>
-                </li>
-                <li class="dropdown-item dropend">
-                  <a class="dropdown-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
-                    Password Reset
-                  </a>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="./password-reset-cover.html">
-                      Side Cover
-                    </a>
-                    <a class="dropdown-item" href="./password-reset-illustration.html">
-                      Illustration
-                    </a>
-                    <a class="dropdown-item" href="./password-reset.html">
-                      Basic
-                    </a>
-                  </div>
-                </li>
-                <li class="dropdown-item dropend">
-                  <a class="dropdown-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
-                    Error
-                  </a>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="./error-cover.html">
-                      Side Cover
-                    </a>
-                    <a class="dropdown-item" href="./error-illustration.html">
-                      Illustration
-                    </a>
-                    <a class="dropdown-item" href="./error.html">
-                      Basic
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
+            
+            
+            <li class="nav-item ">
               <a class="nav-link" id="navbarHire"  href="./hire.html"  aria-haspopup="true" aria-expanded="false">
-                Be Hire
+                BakingHire
               </a>
     
             </li>
+    
           </ul>
     
           <!-- Button -->
-          <a class="navbar-btn btn btn-sm btn-primary lift ms-auto" data-bs-toggle="modal" data-bs-target="#modalBdev">
+          <a class="navbar-btn btn btn-sm btn-primary lift ms-auto" data-bs-toggle="modal" data-bs-target="#modalBhire">
             Early access
           </a>
     
@@ -925,7 +701,7 @@
 
             <!-- Heading -->
             <h1 class="display2 fw-bold text-white mb-6 mt-n3">
-              Automatizamos el proceso de reclutamiento para que sea más rápido y efectivo
+              Automatizamos el proceso de reclutamiento para que sea más rápido y efectivo con Baking<span class="text-success">Hire</span>
             </h1>
 
             <!-- Button -->
@@ -934,8 +710,8 @@
               Ve el video
             </a>
 
-						<a class="btn btn-success lift" data-bs-toggle="modal" data-bs-target="#modalBdev">
-							Early access
+						<a class="btn btn-success lift" data-bs-toggle="modal" data-bs-target="#modalBhire">
+							Early access a la plataforma
 						</a>
 
           </div>
@@ -962,7 +738,7 @@
 
 
 		    <!-- PAY IT DOWN -->
-				<section class="pt-8 pt-md-11" id="payItDown">
+				<section  id="why" class="pt-8 pt-md-11" id="payItDown">
 					<div class="container">
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 text-center">
@@ -974,7 +750,7 @@
 		
 								<!-- Heading -->
 								<h1>
-									¿Por qué tienes que usar BDev Hire?
+									¿Por qué tienes que usar Baking<span class="text-success">Hire</span>?
 								</h1>
 		
 								<!-- Text -->
@@ -1012,7 +788,7 @@
 					
 		
 									<!-- Badge -->
-									<div class="badge badge-lg badge-rounded-circle bg-primary-soft mt-1">
+									<div class="badge badge-lg badge-rounded-circle bg-success-soft mt-1">
 										<span>1</span>
 									</div>
 		
@@ -1034,7 +810,7 @@
 								<div class="d-flex">
 		
 									<!-- Badge -->
-									<div class="badge badge-lg badge-rounded-circle bg-primary-soft mt-1">
+									<div class="badge badge-lg badge-rounded-circle bg-success-soft mt-1">
 										<span>2</span>
 									</div>
 		
@@ -1054,7 +830,7 @@
 								<div class="d-flex">
 		
 									<!-- Badge -->
-									<div class="badge badge-lg badge-rounded-circle bg-primary-soft mt-1">
+									<div class="badge badge-lg badge-rounded-circle bg-success-soft mt-1">
 										<span>3</span>
 									</div>
 		
@@ -1080,7 +856,7 @@
 
 
  <!-- CTA -->
- <section data-jarallax data-speed=".8" class="py-12 py-md-14 overlay overlay-black overlay-80 jarallax" style="background-image: url(assets/img/covers/cover-8.jpg);">
+ <section id="demo" data-jarallax data-speed=".8" class="py-12 py-md-14 overlay overlay-black overlay-80 jarallax" style="background-image: url(assets/img/covers/cover-8.jpg);">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-12 col-md-1- col-lg-8 text-center">
@@ -1091,11 +867,11 @@ Deja de perder tiempo y dinero en tus contrataciones.				</h1>
 
 				<!-- Text -->
 				<p class="fs-lg text-white-80 mb-6 mb-md-8">
-Bdev Hire te va ayudar a realizar contrataciones de calidad, en tiempo record, con un proceso totalmente automatizado y ordenado para simplificar tu dia a dia.
+Baking<span class="text-success">Hire</span> te va ayudar a realizar contrataciones de calidad, en tiempo record, con un proceso totalmente automatizado y ordenado para simplificar tu dia a dia.
 				</p>
 
 				<!-- Button -->
-				<a href="http://web.whatsapp.com/send?text=Tu mensaje&phone=+541121771132&abid=+541121771132" class="btn btn-pill btn-primary lift">
+				<a href="http://web.whatsapp.com/send?text=Tu mensaje&phone=+541121771132&abid=+541121771132" class="btn btn-pill btn-success lift">
 					Solicita una demo. <i class="fe fe-arrow-right ms-2"></i>
 				</a>
 
@@ -1114,14 +890,14 @@ Bdev Hire te va ayudar a realizar contrataciones de calidad, en tiempo record, c
 <footer class="py-8 py-md-11 bg-dark">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-4 col-lg-3">
+      <div class="col-12 offset-md-4 col-md-4 col-lg-3">
 
         <!-- Brand -->
         <img src="./assets/img/brand-bd.svg" alt="..." class="footer-brand img-fluid mb-2">
 
         <!-- Text -->
         <p class="text-gray-700 mb-2">
-          A better way to build.
+         
         </p>
 
         <!-- Social -->
@@ -1149,112 +925,7 @@ Bdev Hire te va ayudar a realizar contrataciones de calidad, en tiempo record, c
         </ul>
 
       </div>
-      <div class="col-6 col-md-4 col-lg-2">
 
-        <!-- Heading -->
-        <h6 class="fw-bold text-uppercase text-gray-700">
-          Services
-        </h6>
-
-        <!-- List -->
-        <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
-          <li class="mb-3">
-            <a href="#!" class="text-reset">
-              Documentation
-            </a>
-          </li>
-          <li class="mb-3">
-            <a href="#!" class="text-reset">
-              Changelog
-            </a>
-          </li>
-          <li class="mb-3">
-            <a href="#!" class="text-reset">
-              Pagebuilder
-            </a>
-          </li>
-          <li>
-            <a href="#!" class="text-reset">
-              UI Kit
-            </a>
-          </li>
-        </ul>
-
-      </div>
-      <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
-
-        <!-- Heading -->
-        <h6 class="fw-bold text-uppercase text-gray-700">
-          Connect
-        </h6>
-
-        <!-- List -->
-        <ul class="list-unstyled text-muted mb-0">
-          <li class="mb-3">
-            <a href="#!" class="text-reset">
-              Page Builder
-            </a>
-          </li>
-          <li class="mb-3">
-            <a href="#!" class="text-reset">
-              UI Kit
-            </a>
-          </li>
-          <li class="mb-3">
-            <a href="#!" class="text-reset">
-              Styleguide
-            </a>
-          </li>
-          <li class="mb-3">
-            <a href="#!" class="text-reset">
-              Documentation
-            </a>
-          </li>
-          <li class="mb-3">
-            <a href="#!" class="text-reset">
-              Changelog
-            </a>
-          </li>
-          <li class="mb-3">
-            <a href="#!" class="text-reset">
-              Documentation
-            </a>
-          </li>
-          <li>
-            <a href="#!" class="text-reset">
-              Changelog
-            </a>
-          </li>
-        </ul>
-
-      </div>
-      <div class="col-6 col-md-4 col-lg-2">
-
-        <!-- Heading -->
-        <h6 class="fw-bold text-uppercase text-gray-700">
-          Legal
-        </h6>
-
-        <!-- List -->
-        <ul class="list-unstyled text-muted mb-0">
-          <li class="mb-3">
-            <a href="#!" class="text-reset">
-              Documentation
-            </a>
-          </li>
-          <li class="mb-3">
-            <a href="#!" class="text-reset">
-              Changelog
-            </a>
-          </li>
-          <li>
-            <a href="#!" class="text-reset">
-              Pagebuilder
-            </a>
-          </li>
-        </ul>
-
-      </div>
     </div> <!-- / .row -->
   </div> <!-- / .container -->
 </footer>
